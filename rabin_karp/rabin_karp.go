@@ -9,7 +9,7 @@ import (
 // RabinKarp struct
 type RabinKarp struct {
 	base         float64
-	mode         float64
+	module       float64
 	curHashValue float64
 }
 
@@ -44,7 +44,7 @@ func (p *RabinKarp) hash(text string, length int) float64 {
 		value += rst * math.Pow(p.base, float64(length-1-index))
 	}
 
-	return math.Mod(value, p.mode)
+	return math.Mod(value, p.module)
 }
 
 // Search.

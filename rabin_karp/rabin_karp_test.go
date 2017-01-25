@@ -3,7 +3,7 @@ package RabinKarp
 import "testing"
 
 func TestRuneToFloat(t *testing.T) {
-	p := RabinKarp{base: 101, mode: 1 << 64}
+	p := RabinKarp{base: 101, module: 1 << 64}
 	var rst float64
 	rst = p.runeToFloat("世界 means world", '世', 0)
 
@@ -18,7 +18,7 @@ func TestRuneToFloat(t *testing.T) {
 }
 
 func TestHash(t *testing.T) {
-	p := RabinKarp{base: 101, mode: 1 << 64}
+	p := RabinKarp{base: 101, module: 1 << 64}
 	var rst float64
 	rst = p.hash("abc", 3)
 
@@ -29,7 +29,7 @@ func TestHash(t *testing.T) {
 
 func TestSearch(t *testing.T) {
 	var rst bool
-	p := RabinKarp{base: 101, mode: 1 << 64}
+	p := RabinKarp{base: 101, module: 1 << 64}
 	rst = p.search("abcd", "d")
 	if !rst {
 		t.Fail()
