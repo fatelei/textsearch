@@ -1,5 +1,5 @@
 # textsearch
-Text search algorithm implement in golang
+Some text search algorithm implement in golang
 
 ## Implemented algorithm.
 
