@@ -15,7 +15,7 @@ package main
 
 import (
   "fmt"
-  "fatelei/textsearch/kmp"
+  "github.com/fatelei/textsearch/kmp"
 )
 
 func main() {
@@ -30,7 +30,7 @@ package main
 
 import (
   "fmt"
-  "fatelei/textsearch/rabin_karp"
+  "github.com/fatelei/textsearch/rabin_karp"
 )
 
 func main() {
